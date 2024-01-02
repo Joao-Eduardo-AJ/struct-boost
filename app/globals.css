@@ -2,10 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+:root {
+  --primaryPink: #f67acb;
+  --primaryDarkPink: #cf62a9;
+  --primaryDarkerPink: #9d457f;
+  --dark100: #f5f6fa;
+  --dark200: #dfe1e8;
+  --dark300: #c0c3cc;
+  --dark400: #abafba;
+  --dark500: #979ba6;
+  --dark600: #787c87;
+  --dark700: #5c5f69;
+  --dark800: #393b42;
+  --dark900: #0a0b0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: var(--font-inter);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-sora);
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sora);
+  color: var(--dark800);
+  line-height: 120%;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.375rem;
+}
+
+p {
+  line-height: 150%;
 }
