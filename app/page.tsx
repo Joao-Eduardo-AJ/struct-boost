@@ -1,3 +1,5 @@
+import { Button } from "@/components"
+
 export default function Home() {
   return (
     <main>
@@ -5,6 +7,7 @@ export default function Home() {
       <section>
         <h1>Hello World</h1>
         <p>inter</p>
+        <Button variant={{ type: "white" }}>Contact</Button>
       </section>
       <footer></footer>
     </main>

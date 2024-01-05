@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     fontSize: {
       sm: "0.875rem",
-      sd: "1rem",
-      md: "1.125rem"
+      md: "1rem",
+      lg: "1.125rem"
     },
     colors: {
       primaryPink: "#F67ACB",
