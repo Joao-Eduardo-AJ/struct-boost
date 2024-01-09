@@ -13,15 +13,15 @@ export function Card({ chipText, title, text }: ICard) {
         <span>{chipText.toUpperCase()}</span>
       </div>
       <Image
-        className="self-center"
+        className="self-center w-36 h-20 md:w-28 md:h-16"
         alt="article image"
         src="hills.svg"
         width={132}
         height={72}
       />
       <div className="grid gap-2">
-        <h6 className="font-semibold">{title}</h6>
-        <p>{text}</p>
+        <h6 className="font-semibold text-lg md:text-xl">{title}</h6>
+        <p className="text-sm md:text-md">{text}</p>
       </div>
     </article>
   )

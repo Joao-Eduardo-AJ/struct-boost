@@ -10,7 +10,8 @@ const config: Config = {
     fontSize: {
       sm: "0.875rem",
       md: "1rem",
-      lg: "1.125rem"
+      lg: "1.125rem",
+      xl: "1.375rem"
     },
     colors: {
       primaryPink: "#F67ACB",
