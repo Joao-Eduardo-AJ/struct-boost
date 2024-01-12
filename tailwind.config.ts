@@ -11,7 +11,8 @@ const config: Config = {
       sm: "0.875rem",
       md: "1rem",
       lg: "1.125rem",
-      xl: "1.375rem"
+      xl: "1.375rem",
+      xl2: "1.5rem"
     },
     colors: {
       primaryPink: "#F67ACB",
