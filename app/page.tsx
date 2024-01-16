@@ -1,9 +1,15 @@
 import { Benefits, Button, Card } from "@/components"
+import { TextsProvider } from "@/translation"
+import Image from "next/image"
 
 export default function Home() {
+  const texts = TextsProvider.get()
+
   return (
     <main>
-      <header></header>
+      <header>
+        <Image src="logo.svg" alt="logo" />
+      </header>
       <section>
         <h1>Hello World</h1>
         <p>inter</p>
