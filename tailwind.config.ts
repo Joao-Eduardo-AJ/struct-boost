@@ -27,6 +27,9 @@ const config: Config = {
       dark700: "#5C5F69",
       dark800: "#393B42",
       dark900: "#0A0B0D"
+    },
+    extend: {
+      "hamburger-inner-before": ""
     }
   },
   plugins: []
