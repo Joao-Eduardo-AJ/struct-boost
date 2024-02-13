@@ -46,11 +46,6 @@
   font-family: var(--font-inter);
 }
 
-html,
-body {
-  background: linear-gradient(89deg, rgb(0, 2, 5) -10.97%, #000205 116.69%);
-}
-
 h1,
 h2,
 h3,
@@ -64,7 +59,7 @@ h6 {
 
 p {
   line-height: 150%;
-  color: var(--dark600);
+  color: var(--dark300);
 }
 
 .hamb--squeeze .hamb-inner::before {

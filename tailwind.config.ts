@@ -12,7 +12,11 @@ const config: Config = {
       md: "1rem",
       lg: "1.125rem",
       xl: "1.375rem",
-      xl2: "1.5rem"
+      xl2: "1.5rem",
+      headings4: "1.75rem",
+      headings3: "2.5rem",
+      headings2: "3rem",
+      headings1: "3.5rem"
     },
     colors: {
       primaryPink: "#F67ACB",
@@ -26,7 +30,8 @@ const config: Config = {
       dark600: "#787C87",
       dark700: "#5C5F69",
       dark800: "#393B42",
-      dark900: "#0A0B0D"
+      dark900: "#0A0B0D",
+      pageBG: "#000205"
     },
     extend: {
       "hamburger-inner-before": ""

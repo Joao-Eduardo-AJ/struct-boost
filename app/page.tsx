@@ -15,24 +15,24 @@ export default function Home() {
 
   return (
     <main>
-      <header className="py-6 px-6 md:px-28 border-b border-dark800 flex items-center justify-between">
+      <header className="flex items-center justify-between border-b border-dark800 py-5 px-6 md:py-8 lg:px-28">
         <Image
           src="logo.svg"
           alt="logo"
           width={208}
           height={26}
-          className="w-40 h-5 md:w-52 md:h-7"
+          className="w-40 h-5 md:w-52 md:h-6"
         />
         <nav
-          className={`bg-dark800 grid transition-all duration-500 overflow-hidden absolute right-14 top-6 ${
+          className={`bg-pageBG grid transition-all duration-500 overflow-hidden absolute right-14 top-4 z-10 md:w-max md:flex md:flex-row-reverse md:items-center md:right-6 lg:right-28 ${
             navBarVisible ? "w-40" : "w-0"
           }`}
         >
           <Button variant={{ type: "containedNav" }}>
             {texts.BUTTON_TEXT_CONTACT}
           </Button>
-          <Button>{texts.BUTTON_TEXT_DIFFERENTIALS}</Button>
           <Button>{texts.BUTTON_TEXT_GALERY}</Button>
+          <Button>{texts.BUTTON_TEXT_DIFFERENTIALS}</Button>
           <Button>{texts.BUTTON_TEXT_HOME}</Button>
         </nav>
         <button
@@ -55,7 +55,48 @@ export default function Home() {
           </span>
         </button>
       </header>
-      <section></section>
+      <section className="pt-16 flex flex-col text-center items-center relative">
+        <h1 className="text-headings3 font-semibold tracking-tight max-w-screen-md md:text-headings1">
+          {texts.FIRST_SECTION_TITLE}
+        </h1>
+        <Image
+          width={599}
+          height={22}
+          alt="underline"
+          src="/underline.svg"
+          className="px-2 -mt-3 md:-mt-4"
+        />
+        <div className="relative flex flex-col items-center px-6 gap-6 mt-1 max-w-xl md:gap-8 md:mt-8">
+          <p>{texts.FIRST_SECTION_SUBTITLE}</p>
+          <Button variant={{ type: "contained" }}>
+            {texts.BUTTON_TEXT_MAKE_PART}
+          </Button>
+          <Image
+            width={110}
+            height={75}
+            alt="arrow"
+            src="/arrow.svg"
+            className="absolute left-0 bottom-4 hidden md:block"
+          />
+        </div>
+        <Image
+          priority
+          width={1348}
+          height={600}
+          alt="desktop"
+          src="/group_desktop.svg"
+          className="mt-12 z-10 hidden md:block"
+        />
+        <Image
+          priority
+          width={363}
+          height={460}
+          alt="mobile"
+          src="/group_mobile.svg"
+          className="mt-12 z-10 self-end block md:hidden"
+        />
+        <div className="w-full h-44 bg-primaryPink absolute bottom-0 lg:h-56" />
+      </section>
       <footer></footer>
     </main>
   )
