@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@/components"
+import { Benefits, Button } from "@/components"
 import { TextsProvider } from "@/translation"
 import Image from "next/image"
 import { useState } from "react"
@@ -96,6 +96,28 @@ export default function Home() {
           className="mt-12 z-10 self-end block md:hidden"
         />
         <div className="w-full h-44 bg-primaryPink absolute bottom-0 lg:h-56" />
+      </section>
+      <section className="flex flex-col items-center gap-16 pt-20 px-7 text-center md:pt-32 md:px-28">
+        <h2 className="text-headings4 max-w-screen-sm font-semibold tracking-tight md:text-headings3">
+          {texts.SECOND_SECTION_TITLE}
+        </h2>
+        <div className="flex flex-col gap-16 border-b border-b-dark800 pb-20 sm:flex-row sm:justify-between md:pb-32">
+          <Benefits
+            src="/face.svg"
+            title={texts.SECOND_SECTION_CARD_1_TITLE}
+            text={texts.SECOND_SECTION_CARD_1_CONTENT}
+          />
+          <Benefits
+            src="/notebook.svg"
+            title={texts.SECOND_SECTION_CARD_2_TITLE}
+            text={texts.SECOND_SECTION_CARD_2_CONTENT}
+          />
+          <Benefits
+            src="/graph.svg"
+            title={texts.SECOND_SECTION_CARD_3_TITLE}
+            text={texts.SECOND_SECTION_CARD_3_CONTENT}
+          />
+        </div>
       </section>
       <footer></footer>
     </main>
