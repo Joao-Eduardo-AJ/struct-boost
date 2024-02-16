@@ -28,6 +28,10 @@ export const Texts = {
 
   // Third section
   THIRD_SECTION_TITLE: "Domina el arte del front-end",
+  THIRD_SECTION_SUBTITLE:
+    "Prepárate para crear interfaces increíbles y funcionales para la web con este completo curso de front-end.",
+  THIRD_SECTION_TEXT:
+    "Únase a nosotros en este curso de front-end y embárquese en un emocionante viaje para convertirse en un desarrollador web altamente mejorado.",
 
   THIRD_SECTION_CARD_1_CHIP: "FUNDAMENTOS",
   THIRD_SECTION_CARD_1_TITLE: "HTML5 y Semántica",

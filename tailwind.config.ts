@@ -30,6 +30,7 @@ const config: Config = {
       dark600: "#787C87",
       dark700: "#5C5F69",
       dark800: "#393B42",
+      dark850: "#1a1b1f",
       dark900: "#0A0B0D",
       pageBG: "#000205"
     },

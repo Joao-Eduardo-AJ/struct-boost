@@ -1,14 +1,17 @@
 import Image from "next/image"
 
 interface ICard {
+  style?: string
   chipText: string
   title: string
   text: string
 }
 
-export const Card = ({ chipText, title, text }: ICard) => (
-  <article className="flex flex-col gap-12 border border-dark800 w-full p-6">
-    <div className="bg-dark800 w-max px-5 py-1 rounded-full text-dark100 font-semibold text-sm tracking-widest">
+export const Card = ({ style, chipText, title, text }: ICard) => (
+  <article
+    className={`flex flex-col gap-12 border border-dark850 w-full p-6 ${style}`}
+  >
+    <div className="bg-dark850 w-max px-5 py-1 rounded-full text-dark100 font-semibold text-sm tracking-widest">
       <span>{chipText.toUpperCase()}</span>
     </div>
     <Image

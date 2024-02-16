@@ -59,7 +59,7 @@ h6 {
 
 p {
   line-height: 150%;
-  color: var(--dark300);
+  color: var(--dark600);
 }
 
 .hamb--squeeze .hamb-inner::before {

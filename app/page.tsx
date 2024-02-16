@@ -1,6 +1,6 @@
 "use client"
 
-import { Benefits, Button } from "@/components"
+import { Benefits, Button, Card } from "@/components"
 import { TextsProvider } from "@/translation"
 import Image from "next/image"
 import { useState } from "react"
@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <main>
-      <header className="flex items-center justify-between border-b border-dark800 py-5 px-6 md:py-8 lg:px-28">
+      <header className="flex items-center justify-between border-b border-dark850 py-5 px-6 md:py-8 lg:px-28">
         <Image
           src="logo.svg"
           alt="logo"
@@ -67,7 +67,7 @@ export default function Home() {
           className="px-2 -mt-3 md:-mt-4"
         />
         <div className="relative flex flex-col items-center px-6 gap-6 mt-1 max-w-xl md:gap-8 md:mt-8">
-          <p>{texts.FIRST_SECTION_SUBTITLE}</p>
+          <p className="text-dark400">{texts.FIRST_SECTION_SUBTITLE}</p>
           <Button variant={{ type: "contained" }}>
             {texts.BUTTON_TEXT_MAKE_PART}
           </Button>
@@ -101,7 +101,7 @@ export default function Home() {
         <h2 className="text-headings4 max-w-screen-sm font-semibold tracking-tight md:text-headings3">
           {texts.SECOND_SECTION_TITLE}
         </h2>
-        <div className="flex flex-col gap-16 border-b border-b-dark800 pb-20 sm:flex-row sm:justify-between md:pb-32">
+        <div className="flex flex-col gap-16 border-b border-b-dark850 pb-20 sm:flex-row sm:justify-between md:pb-32">
           <Benefits
             src="/face.svg"
             title={texts.SECOND_SECTION_CARD_1_TITLE}
@@ -116,6 +116,45 @@ export default function Home() {
             src="/graph.svg"
             title={texts.SECOND_SECTION_CARD_3_TITLE}
             text={texts.SECOND_SECTION_CARD_3_CONTENT}
+          />
+        </div>
+      </section>
+      <section className="flex flex-col gap-4 py-20 px-7 md:py-32 md:px-28 md:gap-16">
+        <div className="grid gap-4 text-center lg:text-start lg:grid-cols-2 lg:grid-rows-2">
+          <h2 className="text-headings4 lg:max-w-screen-sm font-semibold tracking-tight md:text-headings3">
+            {texts.THIRD_SECTION_TITLE}
+          </h2>
+          <p className="hidden text-lg w-4/5 row-span-2 place-self-end self-center lg:block">
+            {texts.THIRD_SECTION_TEXT}
+          </p>
+          <p className="lg:w-5/6 lg:text-lg">{texts.THIRD_SECTION_SUBTITLE}</p>
+        </div>
+        <div className="grid gap-4 lg:grid-cols-3">
+          <Card
+            style="lg:col-span-2"
+            chipText={texts.THIRD_SECTION_CARD_1_CHIP}
+            title={texts.THIRD_SECTION_CARD_1_TITLE}
+            text={texts.THIRD_SECTION_CARD_1_CONTENT}
+          />
+          <Card
+            chipText={texts.THIRD_SECTION_CARD_2_CHIP}
+            title={texts.THIRD_SECTION_CARD_2_TITLE}
+            text={texts.THIRD_SECTION_CARD_2_CONTENT}
+          />
+          <Card
+            chipText={texts.THIRD_SECTION_CARD_3_CHIP}
+            title={texts.THIRD_SECTION_CARD_3_TITLE}
+            text={texts.THIRD_SECTION_CARD_3_CONTENT}
+          />
+          <Card
+            chipText={texts.THIRD_SECTION_CARD_4_CHIP}
+            title={texts.THIRD_SECTION_CARD_4_TITLE}
+            text={texts.THIRD_SECTION_CARD_4_CONTENT}
+          />
+          <Card
+            chipText={texts.THIRD_SECTION_CARD_5_CHIP}
+            title={texts.THIRD_SECTION_CARD_5_TITLE}
+            text={texts.THIRD_SECTION_CARD_5_CONTENT}
           />
         </div>
       </section>
