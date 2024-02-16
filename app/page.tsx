@@ -158,6 +158,17 @@ export default function Home() {
           />
         </div>
       </section>
+      <section className="grid place-content-center gap-4 text-center bg-primaryPink py-20 px-6 md:gap-6 md:py-32 md:px-28">
+        <h2 className="text-headings3 font-semibold tracking-tighter md:text-headings2 md:max-w-3xl">
+          {texts.FOURTH_SECTION_TITLE}
+        </h2>
+        <p className="text-dark100 text-lg md:text-xl md:max-w-3xl">
+          {texts.FIRST_SECTION_SUBTITLE}
+        </p>
+        <Button variant={{ type: "white" }}>
+          {texts.BUTTON_TEXT_MAKE_PART}
+        </Button>
+      </section>
       <footer></footer>
     </main>
   )

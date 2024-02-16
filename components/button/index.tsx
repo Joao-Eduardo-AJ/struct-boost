@@ -8,7 +8,7 @@ const button = tv({
       text: "text-sm text-dark100 font-normal md:text-md",
       containedNav: "text-sm bg-primaryPink md:text-md",
       contained: "text-lg bg-primaryPink font-bold",
-      white: "text-lg bg-dark100"
+      white: "px-6 text-lg bg-dark100 place-self-center"
     }
   },
   defaultVariants: {
