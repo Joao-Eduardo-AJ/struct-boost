@@ -169,6 +169,77 @@ export default function Home() {
           {texts.BUTTON_TEXT_MAKE_PART}
         </Button>
       </section>
+      <section className="grid gap-12 text-center py-14 px-6 md:gap-6 md:py-12 md:px-28 lg:grid-cols-8 lg:text-left">
+        <div className="grid place-items-center gap-4 lg:place-items-start lg:col-span-3">
+          <Image
+            src="logo.svg"
+            alt="logo"
+            width={208}
+            height={26}
+            className="w-52 h-7"
+          />
+          <p className="lg:w-80">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A officiis
+            maxime nostrum, labore exercitationem.
+          </p>
+        </div>
+        <div className="grid gap-8">
+          <p className="text-dark100 font-semibold">{texts.PAGE_LIST}</p>
+          <ul className="grid gap-8">
+            <li className="text-dark600">{texts.HOME}</li>
+            <li className="text-dark600">{texts.DIFFERENTIALS}</li>
+            <li className="text-dark600">{texts.GALERY}</li>
+          </ul>
+        </div>
+        <div className="grid gap-8">
+          <p className="text-dark100 font-semibold">{texts.SOLUTIONS}</p>
+          <ul className="grid gap-8">
+            <li className="text-dark600">{texts.TEXT_LINK} 1</li>
+            <li className="text-dark600">{texts.TEXT_LINK} 2</li>
+            <li className="text-dark600">{texts.TEXT_LINK} 3</li>
+          </ul>
+        </div>
+        <div className="grid gap-8">
+          <p className="text-dark100 font-semibold">{texts.CONTACT}</p>
+          <ul className="grid gap-8">
+            <li className="text-dark600">{texts.TEXT_LINK} 1</li>
+            <li className="text-dark600">{texts.TEXT_LINK} 2</li>
+            <li className="text-dark600">{texts.TEXT_LINK} 3</li>
+          </ul>
+        </div>
+        <div className="grid gap-4 place-items-center lg:place-items-start lg:col-span-2 lg:gap-8">
+          <p className="text-dark100 font-semibold">{texts.OUR_MEDIAS}</p>
+          <ul className="flex gap-4 lg:grid lg:gap-8">
+            <li className="flex gap-4 text-dark600">
+              <Image
+                alt="Instagram"
+                src="/instagram_icon.svg"
+                width={15}
+                height={15}
+              />
+              Instagram
+            </li>
+            <li className="flex gap-4 text-dark600">
+              <Image
+                alt="LinkedIn"
+                src="/linkedin_icon.svg"
+                width={15}
+                height={10}
+              />
+              LinkedIn
+            </li>
+            <li className="flex gap-4 text-dark600">
+              <Image
+                alt="Youtube"
+                src="/youtube_icon.svg"
+                width={17}
+                height={12}
+              />
+              Youtube
+            </li>
+          </ul>
+        </div>
+      </section>
       <footer></footer>
     </main>
   )
